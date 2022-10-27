@@ -22,7 +22,7 @@ class NailClippers
         this->company=BASICCOMPANY;
         this->year_of_production=BASICYEAR;
         this->nails_clipped=0;
-        Informate();
+     
     }
     NailClippers(string mat, string com, int yr)
     {
@@ -30,7 +30,6 @@ class NailClippers
         this->company=com;
         this->year_of_production=yr;
         this->nails_clipped=0;
-        Informate();
     }
     NailClippers(int nai)
     {
@@ -38,7 +37,6 @@ class NailClippers
         this->company=BASICCOMPANY;
         this->year_of_production=BASICYEAR;
         this->nails_clipped=nai;
-        Informate();
     }
     void Informate()
     {
@@ -52,6 +50,9 @@ class NailClippers
 int main()
 {
     NailClippers nail1;
+    nail1.Informate();
     NailClippers nail2("Rusty steel","Sheffield Steel Works ltd.",2019);
+    nail2.Informate();
     NailClippers nail3(123);
+    nail3.Informate();
 }
