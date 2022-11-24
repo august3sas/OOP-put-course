@@ -1,0 +1,93 @@
+#include <iostream>
+#include <map>
+#include <sstream>
+#include <iomanip>
+#include <string>
+using namespace std;
+
+class FakeCantor {
+ private:
+  std::map<std::string, float> rates{{"USD", 1.0366f},
+                                     {"GBP", 0.87063f},
+                                     {"CHF", 0.9881f},
+                                     {"JPY", 145.12f}};
+ public:
+  FakeCantor() = default;
+  float EuroToRate(const std::string &currency) {
+    return rates[currency];
+  };
+};
+
+class Currency {
+ public:
+  virtual Currency *AddedCurrency(float value, std::string currency) = 0;
+  virtual Currency *SubtractedCurrency(float value, std::string currency) = 0;
+  virtual std::string Abbreviation() = 0;
+  virtual std::string Symbol() = 0;
+  virtual std::string Balance() = 0;
+  virtual float DollarExchangeRate() = 0;
+};
+
+class Euro : public Currency {
+    private:
+        float balance;
+        FakeCantor can;
+    public:
+        Euro(float howmany)
+        {
+            this->balance=howmany;
+        }
+        Euro *AddedCurrency(float value, string currency)
+        {
+            float newvalue=100;
+            if(currency!="EUR")//i hate life
+            {  
+                float temp=can.EuroToRate(currency);
+                newvalue=1/temp+balance;
+                Euro *newbalance= new Euro(newvalue);
+                return newbalance;
+            }
+            newvalue=value+balance;
+            Euro *newbalance=new Euro(newvalue);
+            return newbalance;
+        }
+        Euro *SubstractedCurrency(float value, string currency)
+        {
+            float newvalue=100;
+            if(currency!="EUR")
+            {
+                float temp=can.EuroToRate(currency);
+                newvalue=balance-1/temp;
+                Euro *newbalance=new Euro(newvalue);
+                return newbalance;
+            }
+            newvalue=balance-value;
+            Euro *newbalance=new Euro(newvalue);
+            return newbalance;
+        }
+        string Abberviation()
+        {
+            return "EUR";
+        }
+        string Symbol()
+        {
+            return "€";
+        }
+        string Balance()
+        {
+            return to_string(balance)+Symbol();
+        }
+        float DollarExchangeRate()
+        {
+            return can.EuroToRate("USD");
+        }
+
+};
+
+int main() {
+    cout<<"no niestety :( "<<endl;
+    Euro e(21.37);
+    cout<<e.Balance();
+    Euro f=e.SubstractedCurrency(1,"USD");
+    return 0;
+}
