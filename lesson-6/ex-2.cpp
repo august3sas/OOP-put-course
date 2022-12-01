@@ -19,7 +19,8 @@ class WrongIArg : public exception
 };
 class Number
 {
-    virtual double doubleValue()=0;
+    public:
+        virtual double doubleValue()=0;
 };
 class Logarithm : public Number
 {
