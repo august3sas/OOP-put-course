@@ -31,7 +31,7 @@ int main()
 	do{
 		getline(cin,x);
 		if(x!=""){int temp=stoi(x);OneElf.addCalories(temp);}
-		else {GroupOfElves.addElf(OneElf);OneElf.resetElf();}
+		else {GroupOfElves.addElf(OneElf);Elf newElf;OneElf=newElf;}
 	}while(cin);//CTRL-D to END
 	cout<<GroupOfElves.retrieveMax()<<endl;
 }
