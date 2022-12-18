@@ -1,0 +1,87 @@
+GPOINT01 0
+Zbąszynek 1
+GPOINT02 2
+GPOINT02 3
+Zbąszyń 4
+Chrośnica 5
+Jastrzębsko 6
+Nowy Tomyśl 7
+Sątopy 8
+Porażyn 9
+Opalenica 10
+Wojnowice Wlkp 11
+Buk 12
+Otusz 13
+Dopiewo 14
+Palędzie 15
+Poznań Junikowo 16
+Poznań Górczyn 17
+GPOINT21 18
+GPOINT05 19
+Rawicz 20
+Bojanowo 21
+Kaczkowo 22
+Rydzyna 23
+Leszno 24
+GPOINT04 25
+GPOINT04 26
+Lipno Nowe 27
+Górka Duchowna 28
+Stare Bojanowo 29
+Przysieka St. 30
+Kościan 31
+Oborzyska Stare 32
+Czempiń 33
+Iłowiec 34
+Drużyna Poznańska 35
+Mosina 36
+Puszczykówko 37
+Puszczykowo 38
+GPOINT20 39
+GPOINT20 40
+Luboń k.Poznania 41
+Poznań Dębiec 42
+GPOINT21 43
+GPOINT07 44
+Milicz 45
+Rakoniewice Milickie 46
+Cieszków 47
+Zduny 48
+GPOINT06 49
+GPOINT06 50
+Krotoszyn 51
+Bożacin 52
+Wolenice 53
+Koźmin Wielkopolski 54
+Obra Stara 55
+Golina 56
+GPOINT10 57
+GPOINT10 58
+Jarocin 59
+Mieszków 60
+Chocicza 61
+Solec Wlkp 62
+Sulęcinek 63
+Środa Wlkp 64
+Pierzchno 65
+Kórnik 66
+Gądki 67
+Poznań Krzesiny 68
+Poznań Starołęka 69
+Poznań Dębina 70
+GPOINT21 71
+GPOINT22 72
+Kępno 73
+Domanin 74
+Ostragóra 75
+Ostrzeszów 76
+Niedźwiedź Wielkopolski 77
+Antonin 78
+Przygodzice 79
+GPOINT08 80
+GPOINT08 81
+Ostrów Wlkp 82
+Biniew 83
+Bronów 84
+Taczanów 85
+Pleszew 86
