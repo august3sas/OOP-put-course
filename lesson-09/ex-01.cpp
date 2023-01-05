@@ -11,6 +11,6 @@ class FakeFootballGame : public Game{
 int main(){
 	FakeFootballGame game_05_01;
 	cout<<game_05_01.result()<<endl;
-	if (game_05_01.result()==10){cout<<"This is a fake score";}else cout<<"This is a real score"<<endl;
+	if (game_05_01.result()==10){cout<<"This is a fake score"; return 1;}else {cout<<"This is a real score"<<endl;return 0;}
 //	cout<<game_05_01.result()<<endl;
 }
